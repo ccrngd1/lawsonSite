@@ -14,6 +14,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/badge.min.css" rel="stylesheet" type="text/css" />
 
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 </head>
 <body>
 
@@ -63,7 +65,7 @@
                                 <br>
                                 <dt>
                                     Sites<br>
-                                    <github-badge user="ccrngd1" badge="octo"></github-badge>
+                                    <a href="https://www.github.com/ccrngd1"><img src="img/githubbanner.JPG" class="img-responsive"/></a>
                                     <br />
                                     <a href="https://www.linkedin.com/in/nick-lawson-6ba8b721/"><img src="img/linkedinBadge.jpg" class="img-responsive"/></a>
                                 </dt>
@@ -201,10 +203,81 @@
 
                         </div>
                         <div class="tab-pane" id="Experience">
-                            <p>Placeholder 3</p>
+                            <p>Below I further detial some of the projects I have completed for various past employers</p>
+
+                            <h2 style="margin-top:10px;">ZirMed</h2>
+                            <h3>X12Parser</h3>
+                            <p>The company had a need to move of an older platform (known as IBM Universe) and bring all of their work into the .NET world.
+                            I was tasked with leading this intiative and designing what the solution would look like.  I opted to leverage an X12 parser of my own
+                            design instead of relying on various other parsers that had been developed and all but abandoned by other teams.  The start of the
+                            project saw myself with and our subject matter expert mapping out what the current sysytem did and where other X12 parsers had
+                            failed, so we could avoid those pitfalls.  After that, I began finalizing the parser and implementing a simple document schema,
+                            the 277 claim status response.  Once I and the other team member verified the prototype, I brought new team members up to speed
+                            and we began to implement the 5010/837P and 5010/837I formats.  Much of time after that was spent guiding those engineers, code reveiwing,
+                            and monitoring test covarge, as I was splitting my time between this and a new project.</p>
+
+                            <img class="img-responsive" src="img/LineBreakDivide.png" />
+
+                            <h3>SPLUNK dashboards</h3>
+                            <p>As the company adopted SPLUNK as the defacto log repository, it became necessary to report on our error and fatal exception data.
+                            The person responsible for administoring the SPLUNK servers was not familiar with the UI, reporting, or query langauge so I began to learn
+                            and make material for my team.  In the process, I built several dashboards and reports for our QA and engineering team to utilize.  Further,
+                            I augmented my already existing <a href="https://github.com/ccrngd1/LoggingLibrary">LogLibrary</a> to also make a web service call to
+                            the Splunk forwarding services.  This allowed a more organized, strutured message than was available during the original, company-wide implementation.
+                            Several other teams struggeled with this and adopted message structures similar to mine in the aftermath.  For the months following, I was the
+                            source of of training and reference for my team with Splunk.</p>
+
+                            <img class="img-responsive" src="img/LineBreakDivide.png" />
+
+                            <h3>RulesEngine</h3>
+                            <p>I was exposed to a c# based rules engine that was powered, primarily, from Excel spreadsheets that contained the rules themselves, in one
+                                of my earlier positions. When I left them and joined a new organization, I got another opportunity to see two more rules engines that
+                            were built on top of .NET.  Both utilized XML/XPath but in very different ways.  Needless to say, XML and XPath are painful to use and
+                            newer developers are less likely to have any experience with these technologies.  As I began to lead more project designs, I saw a large potential
+                            for a powerful, scalable, flexible rules engine based in C#.  At the time, Roslyn had been published publicly on GitHub and I began investigating
+                            building on top of it.  Early results, unfortunately, showed the capabilities were not as fleshed out as it appeared and soon abandoned this for
+                            a slightly more traditional approach.  By keeping rules in something like a database, they could be combined and built after rule changes, with very
+                                little overhead.  Thus, my <a href="https://github.com/ccrngd1/CSharpRulesEngine">RulesEngine</a> was born and ultimately utilized as a prototype for other teams in the company to build from.
+                            </p>
+
+                            <img class="img-responsive" src="img/LineBreakDivide.png" />
+
+                            <h3>Performance Improvements</h3>
+                            <p>I find performance tuning and enhancements to be an overall fun and challenging experience.  As I began my last several jobs, I took the opportunity
+                                to examine some of the performance bottlenecks as I began to learn the existing systems.  As I learned, I would document and make recommendations
+                                on improvements.  I tend to make these suggestions in two ways 1)in place, with minimal disruption 2)redesign.  It can be useful for managers
+                                and decisions makers to see both a tactical and strategic solution.  These suggestions, combined with performance metrics, help to clarify where
+                                code rot is and what the tangible benefits of fixing these can be.  In general, I focus on both SQL and .NET code, which has served me well
+                                since many junior and mid level developers often create code in both without insight into how it perform or best practices that help make it
+                                better.  In addition to finding some of the low hanging performance improvements, I also create documentation, and try to organize meetings
+                                or lunch and learn opportunities to help developers pick up some new habits and show them pitfalls to avoid.
+                            </p>
+                            <p>I also strive to elevate both myself, and my team, to be a center of excellence for best practices, performance, design, and scalability.  I
+                                routinely find myself being pinged by other teams and pulled into meetings to provide different points of view and help strengthen designs.
+                                That is the kind of collaboration that I try to bring teams that I lead, and that is the kind of culture I look for in future prospects.
+                            </p>
+
+                            <img class="img-responsive" src="img/LineBreakDivide.png" />
+
+                            <h3>Training and Continued Education</h3>
+                            <p>I believe a good engineer and a good developer should never stop growing and learning.  Whether you are writing BASIC on a mainframe server
+                            or going fullstack JS and serverless, you need to keep up with the industry and keep your skills up to date.  It is easy for new grads to
+                            have a wide set of skills in all the latest and greatest, but they are usually missing the experience and seasoning to do great things.
+                            Conversely, grizzled veterans may be fast, efficient, and performant on 20 year old tech but have no idea how new developments might make
+                            their life and their product even better.  While rapid adoption of new tech has to be tempered, especially in high volume or enterprise
+                            settings, learning new ways to solve problems make new problems easier to tackle.</p>
+                            <p>With this mindset, I have introduced lunch and learns for the last few companies I have worked for.  I have covered a myriad of topics
+                            from basic how-tos to in depth tuning.  These events have always been well received by managers, devs, and qas, it is pretty common to
+                            even attract members from other teams.  It can be difficult to get coworkers to buy in to actually doing the presenting, and I often
+                            find myself covering for some last minute with a pre-made slide deck, but I find the experience to be invaluable.</p>
+                            <p>This drive has also led me to teach part time at the college level and at code bootcamps.  I have covered several courses from
+                                basic intro to programming, to language intro, and framework intros. </p>
+
+                            <img class="img-responsive" src="img/LineBreakDivide.png" />
+ 
                         </div>
                         <div class="tab-pane" id="Resume">
-                            <p>Placeholder</p>
+                            <p><embed src="content/WebResume.docx.pdf" width="800" height="1000" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"></p>
                         </div>
                         <div class="tab-pane" id="MoreSites">
                             <p><a href="https://lawsoncs.com"> LawsonCS.com </a>- Professional site for a consulting side business</p>
@@ -221,7 +294,9 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <script src="js/scripts.js"></script>
-<script src="js/badge.min.js"></script>
+
+<script type="text/javascript" src="jquery.githubRepoWidget.min.js"></script>
 </body>
 </html>
